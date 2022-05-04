@@ -12,14 +12,19 @@ var products = {
   pear: 4,
   grape: 0.1
 };
+var myFunciton = function(x){data.count=data.count++}
+
 </script>
+
 
 <template>
   <p> ilosc towarow w koszyku: {{count}}</p>
-  <p> lista towarow: </p>
+  <p> Lista towarow: </p>
+  <p v-for="d of data"> {{ d.name }} , {{ d.price }} <button @click=myFunciton(d.count)>Dodaj</button> </p>
+  
 <hr>
-
-   <p v-for="d of data">Nazwa: {{ d.name }}, Cena: {{ d.price }}, <button onclick="myFunction(){d.count++, count++}">Click me</button>, {{d.count=0}} </p>
+ 
+   <p v-for="d of data"> {{ d.name }}, {{d.count}} </p>
 
 <hr>
   

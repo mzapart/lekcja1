@@ -1,7 +1,7 @@
 import { ref } from 'vue'
 export default ref([
-    {  name: 'Apple', price: 20},
-    {  name: 'Pear', price: 15},
-    { name: 'Grape', price: 64},
-    { name: 'Tomato', price: 32},
+    {  name: 'Apple', price: 20, count:0},
+    {  name: 'Pear', price: 15, count:0},
+    { name: 'Grape', price: 4, count:0},
+    { name: 'Tomato', price: 32, count:0},
 ])
